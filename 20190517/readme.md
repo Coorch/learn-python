@@ -32,3 +32,6 @@ turtle.forward(100)
 turtle.mainloop()
 ```
 ![avatar](Snipaste_2019-05-07_21-12-03.PNG)
+
+## 总结
+本来第一天想多整点内容的，但是配置git就搞了半天，现在还是不能在vscode的命令行使用git指令，但是cmd中可以用，先这样凑合着吧
