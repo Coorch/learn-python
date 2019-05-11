@@ -14,6 +14,6 @@ PS：注意，print括号中用，隔开，输出结果是空格；可用+号将
 print('not flag1:', flag5)
 print('not flag1:' + str(flag5))
 ```
-![avatar](20190511\Snipaste_2019-05-11_14-06-30.PNG)
-![avatar](20190511\Snipaste_2019-05-11_14-06-47.PNG)
+![avatar](20190511/Snipaste_2019-05-11_14-06-30.PNG)
+![avatar](20190511/Snipaste_2019-05-11_14-06-47.PNG)
 如果代码太长写成一行不便于阅读，可以使用\或者()折行
