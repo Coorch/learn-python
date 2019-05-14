@@ -23,3 +23,9 @@ print('not flag1:' + str(flag5))
 主要就是用if语句判断不同情况给出不同的结果，比如分段函数的计算
 学到了getpass可以隐藏输入
 尽量少用嵌套
+
+## 第四天
+主要学习循环结构，包括for循环和while循环。
+一般来说，当循环次数已知时，采用for循环；如果循环次数不确定，可用while True，再设定循环终止条件，用break打断。continue关键字则是用来跳过符合特定条件的循环，但是循环还是继续进行。
+- range(start, end, step)：产生的数列包含start，不含end，所以实际上数列的长度为|start-end|/|step|;如range(5, 1, -1)产生的序列为5,4,3,2
+- randint(start,end)随机整数的范围包括start和end，比如模拟掷骰子，就是randint(1,6)
