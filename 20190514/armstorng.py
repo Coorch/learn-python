@@ -62,3 +62,40 @@ while True:
         break
 
 # craps赌博游戏
+'''
+起始1000元
+每次循环
+第一次摇，7或11，玩家胜，此轮结束；2,3,12，庄家胜此轮结束；否则，继续摇
+继续的情况下，摇出7，庄家胜；摇出与第一次一样的，玩家胜；否则继续
+
+'''
+from random import randint
+money = 1000
+while money > 0:
+    is_go_on = False
+    print('您当前资产为：%d'%money)
+    while True:
+        in_money = int(input('请下注：'))
+        if in_money <= money and in_money > 0:
+            break
+    first = randint(1, 6) + randint(1, 6)
+    if first == 7 or first == 11:
+        print('玩家胜')
+        money = money + in_money
+    elif first == 2 or first == 3 or first == 12:
+        print('庄家胜')
+        money = money - in_money
+    else:
+        is_go_on = True
+    while is_go_on:
+        current = randint(1, 6) + randint(1, 6)
+        if current == first:
+            print('玩家胜')
+            money = money + in_money
+            is_go_on = False
+        elif current == 7:
+            print('庄家胜')
+            money = money - in_money
+            is_go_on == False
+        
+    
