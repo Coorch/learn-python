@@ -49,7 +49,19 @@ def foo():
     # print(c) # NameError:name'c' is not defined
 
 
+def fib(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+        yield a
+
+def main():
+    for val in fib(20):
+        print(val, end=' ')
+
+
 if __name__ == '__main__':
     a = 100
     # print(b) #NameError:name'b' is not defined
     foo()
+    main()
