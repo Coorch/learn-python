@@ -62,4 +62,5 @@ class Pet(object, metaclass=ABCMeta):
 ```
 
 ### 样例总结
-- list.sort()和sorted()函数可以指定参数key,此参数为一个函数，在每个元素比较前被调用。
+- list.sort()和sorted()函数可以指定参数key,此参数为一个函数，在每个元素比较前被调用。这个函数只有一个参数，且返回一个值用来进行比较。
+
