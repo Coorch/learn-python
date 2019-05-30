@@ -60,3 +60,6 @@ class Pet(object, metaclass=ABCMeta):
         """发出声音"""
         pass
 ```
+
+### 样例总结
+- list.sort()和sorted()函数可以指定参数key,此参数为一个函数，在每个元素比较前被调用。
