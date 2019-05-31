@@ -10,3 +10,5 @@ python默认的GUI开发模块是tkinter
 3. 在顶层窗口对象上添加GUI组件。
 4. 通过代码将这些GUI组件的功能组织起来。
 5. 进入主事件循环(main loop)。
+
+不要用tkinter作为文件名啊。。。不然会报错：module 'tkinter' has no attribute 'messagebox'
