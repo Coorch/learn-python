@@ -12,3 +12,6 @@ python默认的GUI开发模块是tkinter
 5. 进入主事件循环(main loop)。
 
 不要用tkinter作为文件名啊。。。不然会报错：module 'tkinter' has no attribute 'messagebox'
+
+# 20190609
+用pygame画图，还是没能理解原理，先跳过这一天
