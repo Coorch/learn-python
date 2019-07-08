@@ -16,3 +16,10 @@ Python的os模块提供fork()函数，但是Win系统没有fork调用，要用�
 
 - l2中用Process类创建进程对象
 两个下载任务同时启动
+
+## 20190708
+### python中的多线程
+- 推荐threading模块
+l5将l2的函数封装到继承的类中，run函数改写，start函数会调用run
+
+- “临界资源”
