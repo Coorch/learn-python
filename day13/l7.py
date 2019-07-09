@@ -1,19 +1,25 @@
 from time import sleep
-from threading import Thread
+from threading import Thread, Lock
 
 
 class Account(object):
 
     def __init__(self):
         self._balance = 0
+        self._lock = Lock()
     
     def deposit(self, money):
-        #计算存款后的余额
-        new_balance = self._balance + money
+        #仙获取锁才能执行后续代码
+        self._lock.acquire()
+        try:
+            new_balance = self._balance + money
         # 模拟受理存款业务需要0.01秒的时间
-        sleep(0.01)
-        self._balance = new_balance
-    
+            sleep(0.01)
+            self._balance = new_balance
+        finally:
+
+            self._lock.release()
+
     @property
     def balance(self):
         return self._balance
