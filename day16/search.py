@@ -27,7 +27,7 @@ def bin_search(items, key):
         mid = (start + end) // 2
         if key > items(mid):
             start = mid + 1
-        elif key < item(mid):
+        elif key < items(mid):
             end = mid - 1
         else:
             return mid
