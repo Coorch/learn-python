@@ -1,0 +1,5 @@
+- 皮肤：
+- 自动保存：设置-常用设置-AutoSave：OnFocusChange
+- 括号的扩展：Bracket Pair Colorizer 2
+- 文件图标插件：vscode-icons
+- 皮肤插件：dracula official吸血鬼皮肤
