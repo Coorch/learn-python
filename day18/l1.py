@@ -53,3 +53,9 @@ while True:
         print(fish)
         break
     fish += 5
+
+def test(**kwargs):
+    print(kwargs)
+    for i in kwargs.keys():
+        print(i)
+test(a=1, b=2)
